@@ -1,76 +1,197 @@
+/* utility classes */
+
+.hidden {
+    display: none;
+}
+
+/* general styles */
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #000;
 }
+
+/* main heading  */
+
 header {
     background: #222;
     color: white;
-    padding: 10px 0;
+    padding: 10px 0 10px 0;
 }
+
 .logo {
     max-width: 150px;
+    display: block;
+    margin: 0 auto;
 }
-.characters {
+
+/* main character nav  */
+
+.characters{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url('../images/getbackers.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #675f5f;
+    background-blend-mode: multiply;
+    background-position: bottom;
+}
+
+.character {
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin: 20px 0;
-    background-image: url('../images/getbackers.jpg');
 }
-.character {
+
+.character li {
+    background-color: #ff9900;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.character li:hover {
+    transform: scale(1.1);
+    background-color: aliceblue;
+    border-radius: 0 50% 50% 0;
+    font-size: 12px;
+    text-align: left;
+}
+
+.character li a {
     width: 200px;
     text-decoration: none;
     color: inherit;
 }
+
 .character img {
-    width: 100%;
+    width: 200px;
     border-radius: 10px;
     transition: transform 0.3s;
 }
+
 .character img:hover {
     transform: scale(1.1);
+    filter: hue-rotate(180deg);
+    border-radius: 50% 0 50% 0;
 }
+
 .character h2 {
     transition: color 0.3s, transform 0.3s;
 }
+
 .character h2:hover {
     color: #ff9900;
     transform: scale(1.1);
+    text-align: center;
 }
-.lightbox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
+
+/* instructions  */
+
+#instructions{
     padding: 20px;
 }
-.lightbox:target {
-    display: flex;
+
+#instructions h3{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 15px;
 }
+
+#instructions p{
+    font-size: 18px;
+    text-align: center;
+}
+
+/* lightbox  */
+
+.lightbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(149, 140, 140, 0.8);
+    display: none;
+    background-size: 55vh;
+    background-repeat: no-repeat;
+    background-position: 40px top;
+    z-index: 10;
+}
+
+.lightbox:target {
+    display: block;
+}
+
 .lightbox img {
     max-width: 80%;
     max-height: 60%;
     margin-bottom: 10px;
 }
+
+.lb-heading{
+    font-size: 32px;
+    color: #ff9900;
+}
+
+.lb-text{
+    line-height: 24px;
+    color: inherit;
+}
+
+.lightbox article{
+    margin-left: 40%;
+    margin-top: 50px;
+    width: 600px;
+}
+
+#lightbox-ban{
+    background-image: url('../images/BanMido2.png');
+}
+
+#lightbox-ginji{
+    background-image: url('../images/GinjiAmano1.png');
+}
+
+#lightbox-shido{
+    background-image: url('../images/Shido_Fuyuki1.png');
+}
+
+#lightbox-kazuki{
+    background-image: url('../images/KazukiFuuchouin.png');
+}
+
+#lightbox-akabane{
+    background-image: url('../images/Dr_Jackal.png');
+}
+
+#lightbox-himiko{
+    background-image: url('../images/Himiko_Kudo.png');
+}
+
 .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 30px;
-    color: white;
+    margin-left: 90%;
+    font-size: 45px;
+    color: #ff9900;
     text-decoration: none;
 }
+
+/* footer  */
+
 footer {
     background: #222;
     color: white;
     padding: 10px;
     margin-top: 20px;
+    height: 60px;
+    padding: 20px 0 20px 0;
 }

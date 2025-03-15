@@ -1,81 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GetBackers Characters</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-</head>
-<body>
-    <header>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GetBackers Characters</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+
+    <body>
+
+        <header>
         <img src="images/logo.png" alt="GetBackers Logo" class="logo">
-        <h1>GetBackers - Characters</h1>
-    </header>
-    <main>
-        <section class="characters">
-            <div class="character">
-                <a href="#lightbox-ban"><img src="images/BanMido1.jpg" alt="Ban Mido"></a>
-                <h2>Ban Mido</h2>
-            </div>
-            <div class="character">
-                <a href="#lightbox-ginji"><img src="images/GinjiAmano2.jpg" alt="Ginji Amano"></a>
-                <h2>Ginji Amano</h2>
-            </div>
-            <div class="character">
-                <a href="#lightbox-shido"><img src="images/Shido_Fuyuki.jpg" alt="Shido Fuyuki"></a>
-                <h2>Shido Fuyuki</h2>
-            </div>
-            <div class="character">
-                <a href="#lightbox-kazuki"><img src="images/KazukiFuuchouin1.jpg" alt="Kazuki Fuuchouin"></a>
-                <h2>Kazuki Fuuchouin</h2>
-            </div>
-            <div class="character">
-                <a href="#lightbox-akabane"><img src="images/Dr_Jackal1.jpg" alt="Dr. Jackal"></a>
-                <h2>Dr. Jackal</h2>
-            </div>
-            <div class="character">
-                <a href="#lightbox-himiko"><img src="images/Himiko_Kudo1.jpg" alt="Himiko Kudo"></a>
-                <h2>Himiko Kudo</h2>
-            </div>
-        </section>
+        <h1 class="hidden">GetBackers - Characters</h1>
+        </header>
+
+        <main>
+        <nav class="characters">
+            <h2 class="hidden">main character navigation</h2>
+            <ul class="character">
+                <li>
+                    <a href="#lightbox-ban">
+                        <img src="images/BanMido1.jpg" alt="Ban Mido">
+                        <h2>Ban Mido</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#lightbox-ginji">
+                        <img src="images/GinjiAmano2.jpg" alt="Ginji Amano">
+                        <h2>Ginji Amano</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#lightbox-shido">
+                        <img src="images/Shido_Fuyuki.jpg" alt="Shido Fuyuki">
+                        <h2>Shido Fuyuki</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#lightbox-kazuki">
+                        <img src="images/KazukiFuuchouin1.jpg" alt="Kazuki Fuuchouin">
+                        <h2>Kazuki Fuuchouin</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#lightbox-akabane">
+                        <img src="images/Dr_Jackal1.jpg" alt="Dr. Jackal">
+                        <h2>Dr. Jackal</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#lightbox-himiko">
+                        <img src="images/Himiko_Kudo1.jpg" alt="Himiko Kudo">
+                        <h2>Himiko Kudo</h2>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
         <section id="instructions">
-            <h3>Choose your Character!</h3>
-            <p>Use your mouse to hover/ click to discover more about each Character.</p>
+            <h3>Choose your character!</h3>
+            <p>
+                Use your mouse to hover/ click to discover more about each Character.
+            </p>
         </section>
-    </main>
-    
-    <div id="lightbox-ban" class="lightbox">
-        <a href="#" class="close">&times;</a>
-        <img src="images/BanMido2.png" alt="Ban Mido">
-        <p>Ban Mido is one of the GetBackers and possesses the Evil Eye, which allows him to create powerful illusions.</p>
-    </div>
-    <div id="lightbox-ginji" class="lightbox">
-        <a href="#" class="close">&times;</a>
-        <img src="images/GinjiAmano1.png" alt="Ginji Amano">
-        <p>Ginji Amano, the other half of the GetBackers duo, can generate and control electricity, earning him the title of the Lightning Emperor.</p>
-    </div>
-    <div id="lightbox-shido" class="lightbox">
-        <a href="#" class="close">&times;</a>
-        <img src="images/Shido_Fuyuki1.png" alt="Shido Fuyuki">
-        <p>Shido Fuyuki is a beastmaster who can control animals and use their abilities in combat.</p>
-    </div>
-    <div id="lightbox-kazuki" class="lightbox">
-        <a href="#" class="close">&times;</a>
-        <img src="images/KazukiFuuchouin.png" alt="Kazuki Fuuchouin">
-        <p>Kazuki Fuuchouin is a graceful fighter who wields strings in battle and is a former leader of the Fuuchouin Thread School.</p>
-    </div>
-    <div id="lightbox-akabane" class="lightbox">
-        <a href="#" class="close">&times;</a>
-        <img src="images/Dr_Jackal.png" alt="Dr. Jackal">
-        <p>Dr. Jackal, also known as Akabane Kuroudo, is a deadly assassin with scalpels embedded in his body that he uses as lethal weapons.</p>
-    </div>
-    <div id="lightbox-himiko" class="lightbox">
-        <a href="#" class="close">&times;</a>
-        <img src="images/Himiko_Kudo.png" alt="Himiko Kudo">
-        <p>Himiko Kudo is a master of poisons and perfumes, using them to enhance her combat abilities.</p>
-    </div>
-    <footer>
-        <p>&copy; 2025 GetBackers Fan Site. All rights reserved.</p>
-    </footer>
-</body>
+        </main>
+
+        <section id="lightbox-ban" class="lightbox">
+            <a href="" class="close">&times;</a>
+            <article>
+                <h3 class="lb-heading">Ban Mido</h3>
+                <p class="lb-text">
+                    Ban Mido is one of the GetBackers and possesses the Evil Eye, which
+                    allows him to create powerful illusions.
+                </p>
+            </article>
+        </section>
+
+        <section id="lightbox-ginji" class="lightbox">
+            <a href="" class="close">&times;</a>
+            <article>
+                <h3 class="lb-heading">Ginji Amano</h3>
+                <p class="lb-text">
+                    Ginji Amano, the other half of the GetBackers duo, can generate and
+                    control electricity, earning him the title of the Lightning Emperor.
+                </p>
+            </article>
+        </section>
+
+        <section id="lightbox-shido" class="lightbox">
+            <a href="" class="close">&times;</a>
+            <article>
+                <h3 class="lb-heading">Shido Fuyuki</h3>
+                <p class="lb-text">
+                    Shido Fuyuki is a beastmaster who can control animals and use their
+                    abilities in combat.
+                </p>
+            </article>
+        </section>
+
+        <section id="lightbox-kazuki" class="lightbox">
+            <a href="" class="close">&times;</a>
+            <article>
+                <h3 class="lb-heading">Kazuki Fuuchouin</h3>
+                <p class="lb-text">
+                    Kazuki Fuuchouin is a graceful fighter who wields strings in battle
+                    and is a former leader of the Fuuchouin Thread School.
+                </p>
+            </article>
+        </section>
+
+        <section id="lightbox-akabane" class="lightbox">
+            <a href="" class="close">&times;</a>
+            <article>
+                <h3 class="lb-heading">Dr. Jackal</h3>
+                <p class="lb-text">
+                    Dr. Jackal, also known as Akabane Kuroudo, is a deadly assassin with
+                    scalpels embedded in his body that he uses as lethal weapons.
+                </p>
+            </article>
+        </section>
+
+        <section id="lightbox-himiko" class="lightbox">
+            <a href="" class="close">&times;</a>
+            <article>
+                <h3 class="lb-heading">Himiko Kudo</h3>
+                <p class="lb-text">
+                    Himiko Kudo is a master of poisons and perfumes, using them to enhance
+                    her combat abilities.
+                </p>
+            </article>
+        </section>
+
+        <footer>
+            <p>
+                &copy; 2025 GetBackers Fan Site. All rights reserved.
+            </p>
+        </footer>
+
+    </body>
+
 </html>
